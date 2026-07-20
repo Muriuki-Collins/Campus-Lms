@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for Dark Mode. -->
+    <style name="Base.Theme.CampusLms" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Dark Theme Colors -->
+        <item name="colorPrimary">#8AB4F8</item>
+        <item name="colorOnPrimary">#202124</item>
+        <item name="android:statusBarColor">@color/dark_background</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.CampusLms" parent="Base.Theme.CampusLms" />
+</resources>

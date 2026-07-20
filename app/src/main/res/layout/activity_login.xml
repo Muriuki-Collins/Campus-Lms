@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center_horizontal"
+    android:background="?android:attr/windowBackground">
+
+    <!-- View 1: ImageView (School Logo) - Even Bigger -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/school_logo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/school_logo"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.App.Circular"
+        app:strokeColor="@color/primary_blue"
+        app:strokeWidth="4dp"
+        android:background="@color/secondary_white"
+        android:elevation="16dp"
+        android:contentDescription="Zetech University Logo" />
+
+    <!-- View 2: EditText (Name) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Student Name"
+        style="@style/Widget.App.TextInputLayout"
+        app:startIconDrawable="@android:drawable/ic_menu_myplaces"
+        app:startIconTint="@color/primary_blue">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textfield_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="?android:attr/textColorPrimary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- View 3: EditText (Email) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Student Email"
+        style="@style/Widget.App.TextInputLayout"
+        app:startIconDrawable="@android:drawable/ic_dialog_email"
+        app:startIconTint="@color/primary_blue">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textfield_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="?android:attr/textColorPrimary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- View 4: EditText (Password) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Access Password"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.App.TextInputLayout"
+        app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+        app:startIconTint="@color/primary_blue">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textfield_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="?android:attr/textColorPrimary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- View 5: Button (Submit) -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Login to Portal"
+        android:textAllCaps="false"
+        style="@style/Widget.App.Button"
+        android:backgroundTint="@color/primary_blue"
+        android:textColor="@color/secondary_white"
+        android:elevation="8dp" />
+
+    <!-- View 6: Button (Cancel) -->
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:text="Clear Form"
+        android:textAllCaps="false"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:textColor="@color/error_red" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Enrollment"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginBottom="32dp" />
+
+        <!-- EditText (Full Name) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Full Name"
+            style="@style/Widget.App.TextInputLayout"
+            app:startIconDrawable="@android:drawable/ic_menu_myplaces"
+            app:startIconTint="?attr/colorPrimary"
+            app:elevation="4dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="?android:attr/textColorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Dropdown (Enrolled Course) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Choose Course"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.App.Rounded"
+            app:startIconDrawable="@android:drawable/ic_menu_agenda"
+            app:startIconTint="?attr/colorPrimary"
+            app:elevation="4dp">
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/reg_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textColor="?android:attr/textColorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- EditText (Age) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:hint="Student Age"
+            style="@style/Widget.App.TextInputLayout"
+            app:startIconDrawable="@android:drawable/ic_dialog_info"
+            app:startIconTint="?attr/colorPrimary"
+            app:elevation="4dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="?android:attr/textColorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Enroll Button -->
+        <Button
+            android:id="@+id/btn_register_student"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Enroll Student"
+            android:textAllCaps="false"
+            style="@style/Widget.App.Button"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@color/secondary_white"
+            android:elevation="8dp" />
+
+        <!-- Navigation Button: Back to Home -->
+        <Button
+            android:id="@+id/btn_register_to_home"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Back to Home Page"
+            android:textAllCaps="false"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="?attr/colorPrimary" />
+
+    </LinearLayout>
+</ScrollView>

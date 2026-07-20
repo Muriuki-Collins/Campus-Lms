@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Image Section - Taller and More Impactful -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+            <ImageView
+                android:id="@+id/campus_building"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/campus_building"
+                android:contentDescription="Campus Main Building" />
+
+            <!-- Dynamic Gradient Overlay -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#B3000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:padding="32dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/school_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zetech University"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="6" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="6dp"
+                    android:background="?attr/colorPrimary"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Motto Section - Deeper Overlap -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="16dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="32dp"
+                android:gravity="center"
+                android:background="?android:attr/colorBackground">
+
+                <TextView
+                    android:id="@+id/school_motto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invent Your Future: Our mission is to provide holistic education by promoting excellence in education, research and innovation."
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="10dp"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Navigation Button: Logout -->
+        <Button
+            android:id="@+id/btn_home_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="24dp"
+            android:text="Logout to Login Page"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:textColor="@color/error_red"
+            app:cornerRadius="16dp" />
+
+    </LinearLayout>
+</ScrollView>

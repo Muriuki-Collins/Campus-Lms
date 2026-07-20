@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/courses_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Programs"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:padding="28dp"
+            android:background="?attr/colorPrimary"
+            android:elevation="8dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/courses_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_container"
+        android:layout_above="@id/btn_courses_to_register"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btn_courses_to_register"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="Back to Register Page"
+        android:textAllCaps="false"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:textColor="?attr/colorPrimary"
+        app:cornerRadius="16dp" />
+
+</RelativeLayout>
