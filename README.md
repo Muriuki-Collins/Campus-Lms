@@ -1,6 +1,6 @@
-# Zetech University - Campus LMS
+# Campus LMS
 
-A modern, vibrant, and multi-screen Android application built for Zetech University. This digital school portal provides a stunning user experience with professional branding, advanced navigation, and full accessibility support.
+ This digital school portal provides a stunning user experience with professional branding, advanced navigation, and full accessibility support.
 
 ## Key Features
 
