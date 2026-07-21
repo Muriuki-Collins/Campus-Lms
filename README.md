@@ -46,5 +46,4 @@ A scrollable list of department courses organized into stylish Material cards. E
 3.  **Build**: Select `Build > Make Project`.
 4.  **Run**: Click the `Run` button to deploy the app to your emulator or connected physical device.
 
----
-*Developed as part of the Zetech University Digital Portal project.*
+
